@@ -1,4 +1,4 @@
-;Factoriel
+;factorial
 
 org 100h
 
@@ -8,10 +8,10 @@ dec cx
 mov bx,num
 dec bx
 
-Factoirel:
+factorial:
     mul bx
     dec bx
-    loop Factoirel
+    loop factorial
     
 mov f,ax
     
