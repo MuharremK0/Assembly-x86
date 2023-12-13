@@ -1,4 +1,4 @@
-;Lab02
+;Print numbers and sum up to given number
 
 org 100h
 
