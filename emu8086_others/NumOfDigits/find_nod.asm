@@ -7,21 +7,21 @@ mov ax,num
 mov bx,0
 mov si,10
 
-basamak_bul:
+find_digit:
     cmp ax,0
     je finish
     div si
     mov dx,0
     inc bx
-    jmp basamak_bul
+    jmp find_digit
     
 
 finish:
-    mov basamak,bx
+    mov digit,bx
 
 ret
 num dw 154854
-basamak dw ?
+digit dw ?
 
 
 
